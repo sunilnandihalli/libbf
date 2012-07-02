@@ -347,7 +347,9 @@ public:
 
         return str;
     }
-
+    
+    
+    
     /// Apply a functor to each counter in the bit vector.
     /// \tparam The type of the unary functor.
     /// \param f An instance of type F.
@@ -357,7 +359,12 @@ public:
         for (size_type cell = 0; cell < bits_.size() / width_; ++cell)
             f(count(cell));
     }
-
+    
+    const bitset& getbits() const
+    {
+      return bits_;
+    }
+    
 private:
     bitset bits_;
     unsigned width_;
