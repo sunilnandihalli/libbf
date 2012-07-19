@@ -63,7 +63,7 @@ public:
     }
 
 protected:
-    bloom_filter()
+ bloom_filter:n_(0)()
     {
     };
 
